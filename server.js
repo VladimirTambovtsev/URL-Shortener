@@ -36,7 +36,7 @@ function generate() {
 
   http.createServer(function (request, response) {
 
-    console.log('Start');
+    
     var filePath = '.' + request.url;
     if (filePath == './' && request.method == 'GET') {
         filePath = './views/index.html';
