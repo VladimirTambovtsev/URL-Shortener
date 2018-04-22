@@ -8,7 +8,7 @@
   <title>URL Shortener</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="public/css/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -27,10 +27,12 @@
 
             <div class="col-lg-12">
               <div class="input-group input-group-lg">
+                 
                 <input id="url-field" type="text" class="form-control" placeholder="Paste a link...">
                 <span class="input-group-btn">
-                  <button class="btn btn-shorten" type="button">Short It</button>
+                  <button class="btn btn-shorten" id="btn-shorten">Short It</button>
                 </span>
+                 
               </div>
             </div>
 
@@ -50,6 +52,6 @@
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="javascripts/shorten.js"></script>
+  <script src="../public/javascripts/shorten.js"></script>
 </body>
 </html>
