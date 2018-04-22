@@ -1,11 +1,10 @@
 # URL-Shortener
 
-# Setup
+# Start
 
  <code>cd URL-Shortener/</code><br>
 
-
-### Start
+ 
 <code>npm install</code><br>
-<code>npm start</code><br>
+<code>npm start</code><br><br>
 <a href="http://localhost:3000/">http://localhost:3000/ </a>
