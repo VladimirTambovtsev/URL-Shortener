@@ -36,15 +36,15 @@ function generate() {
 
   http.createServer(function (request, response) {
 
+    console.log('Start');
     var filePath = '.' + request.url;
     if (filePath == './' && request.method == 'GET') {
         filePath = './views/index.html';
-
     } 
 
     if (request.url == '/endpoint' && request.method == 'POST') {
       console.log("RESPONSE", response._headerSent);
-      
+      console.log('Start');
 
        // Parse Data from Form
         var body = '';
@@ -98,7 +98,7 @@ function generate() {
             };
             console.log("JSON", data);
 
-            response.setHeader('content-type', 'application/json');
+            //response.setHeader('content-type', 'application/json');
             response.end(data);
             
             //response.setHeader('content-type', 'application/json');
